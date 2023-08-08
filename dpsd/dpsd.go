@@ -98,9 +98,9 @@ func (t *DPSD) findFiles() error {
 			model := dcfDirE.Name()[:4]
 			suffix := dcfDirE.Name()[9:12]
 
-			// 105SIGMA/DP2M1234.JPG -> DP2M_0051234.JPEG
-			newFilename := fmt.Sprintf("%s_%03d%04d.%s",
-				model, dcimNum-100, dcfNum, suffix)
+			// 105SIGMA/DP2M1234.JPG -> DP2M_005-1234.JPEG
+			newFilename := fmt.Sprintf("%s_%03d-%04d.%s",
+				model, dcimNum, dcfNum, suffix)
 
 			t.SrcFiles = append(t.SrcFiles, SrcFile{
 				DCFDirName:  dcimDirE.Name(),

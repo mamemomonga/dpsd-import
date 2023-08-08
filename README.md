@@ -2,8 +2,8 @@
 
 ファイル名を以下のように変換しながらコピーします。
 
-* 105SIGMA/DP2M1234.JPG -> JPEG/DP2M0051234.JPG
-* 105SIGMA/DP2M1234.X3F -> X3F/DP2M0051234.X3F
+* 105SIGMA/DP2M1234.JPG -> JPEG/DP2M_105-1234.JPG
+* 106SIGMA/DP2M1234.X3F -> X3F/DP2M_106-1234.X3F
 
 本プログラムはGolangで書かれています。macOS特有のファイル構造やコマンドに依存していますので、macOS専用です。また、ファイル名はDP??型で、sRGB保存である必要があります(AdobeRGBの場合はファイル名が変わります。)
 
