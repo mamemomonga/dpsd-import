@@ -61,7 +61,7 @@ func (t *DPSD) Run() bool {
 
 	fmt.Printf("%s を全て削除しますか？", t.InputDir)
 	if ask4Confirm() {
-		runCommand("rm", "-rf", t.InputDir)
+		runCommand("rm", "-rf", filepath.Join(t.InputDir, "DCIM"))
 	}
 
 	fmt.Printf("%s をアンマウントしますか？", t.InputDir)
